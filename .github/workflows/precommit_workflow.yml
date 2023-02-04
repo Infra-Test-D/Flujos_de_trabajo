@@ -15,6 +15,11 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+    
+    - name: Show commit diff
+      run: |
+        echo "Commit diff:"
+        git diff ${{ env.GITHUB_SHA }}^!
 
     - name: Set up Python
       uses: actions/setup-python@v2
