@@ -18,7 +18,7 @@ jobs:
       
     - name: Run
       run: |
-        git reset --soft HEAD
+        git reset --soft HEAD^
     
     - name: Show commit diff
       run: |
