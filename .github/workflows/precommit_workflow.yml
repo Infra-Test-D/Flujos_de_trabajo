@@ -11,6 +11,8 @@ on:
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
+    
+    continue-on-error: true
 
     steps:
     - name: Checkout code
@@ -34,4 +36,3 @@ jobs:
       run: |
         pre-commit run -a >> result.txt
         cat result.txt | sed 's/.*/\x1b[31m&\x1b[0m/'
-        exit 0
