@@ -3,4 +3,5 @@ repos:
     rev: v4.4.0  # Use the ref you want to point at
     hooks:
     -   id: detect-private-key
+    -   id: detect_aws_credentials
 
