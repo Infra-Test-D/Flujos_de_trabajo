@@ -15,16 +15,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      
-    - name: Run
-      run: |
-        git reset --soft HEAD
     
-    - name: Show commit diff
-      run: |
-        echo "Commit diff:"
-        ls -la
-
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -40,4 +31,4 @@ jobs:
     
     - name: Run pre-commit checks
       run: |
-        pre-commit run
+        pre-commit run --from-ref HEAD^ --to-ref HEAD
