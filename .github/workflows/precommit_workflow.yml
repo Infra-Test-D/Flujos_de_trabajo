@@ -19,7 +19,7 @@ jobs:
     - name: Show commit diff
       run: |
         echo "Commit diff:"
-        git diff ${{ env.GITHUB_SHA }}^!
+        git diff ${{ env.GITHUB_SHA }}
 
     - name: Set up Python
       uses: actions/setup-python@v2
