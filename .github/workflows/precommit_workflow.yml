@@ -32,5 +32,6 @@ jobs:
     - name: Run pre-commit checks
       id: run_pre_commit
       run: |
-        pre-commit run -a
+        pre-commit run -a >> result.txt
+        echo result.txt
         exit 0
