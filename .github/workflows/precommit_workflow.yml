@@ -32,5 +32,5 @@ jobs:
     - name: Run pre-commit checks
       id: run_pre_commit
       run: |
-        pre-commit run -a --allow-missing-credentials
+        pre-commit run -a
       
