@@ -34,5 +34,5 @@ jobs:
     - name: Run pre-commit checks
       id: run_pre_commit
       run: |
-        pre-commit run -a >> result.txt
-        cat result.txt | sed 's/.*/\x1b[31m&\x1b[0m/'
+        pre-commit run -a | sed 's/.*/\x1b[31m&\x1b[0m/'
+
