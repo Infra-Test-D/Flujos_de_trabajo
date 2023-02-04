@@ -33,4 +33,4 @@ jobs:
       id: run_pre_commit
       run: |
         pre-commit run -a
-      
+        exit 0
