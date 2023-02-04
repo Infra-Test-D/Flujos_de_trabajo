@@ -19,7 +19,7 @@ jobs:
     - name: Show commit diff
       run: |
         echo "Commit diff:"
-        git diff HEAD
+        ls -la
 
     - name: Set up Python
       uses: actions/setup-python@v2
