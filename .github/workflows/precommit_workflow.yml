@@ -33,5 +33,5 @@ jobs:
       id: run_pre_commit
       run: |
         pre-commit run -a >> result.txt
-        echo result.txt
+        cat result.txt
         exit 0
