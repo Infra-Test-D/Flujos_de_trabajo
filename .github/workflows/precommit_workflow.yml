@@ -29,6 +29,8 @@ jobs:
         
     - name: Dowload precommit config file
       run: |
+        ls -la
+        pwd
         curl -o .pre-commit-config.yaml https://raw.githubusercontent.com/Infra-Test-D/Flujos_de_trabajo/main/.pre-commit-config.yaml
     
     - name: Run pre-commit checks
